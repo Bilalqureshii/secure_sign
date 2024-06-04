@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication Website</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <h1 class="web-name">SecureSign</h1>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="content">
+        <h2>Welcome to the SecureSign</h2>
+        <p>
+          SecureSign is a trusted platform dedicated to providing robust
+          authentication solutions for users worldwide. With a focus on security
+          and user experience, we offer state-of-the-art authentication
+          mechanisms to safeguard your digital identity and data. Our team of
+          experts is committed to staying ahead of evolving cyber threats,
+          ensuring that your online interactions remain secure and seamless. At
+          SecureSign, we believe in empowering individuals and businesses to
+          navigate the digital landscape with confidence. Join us in our mission
+          to create a safer online environment for everyone.
+        </p>
+      </div>
+      <div class="button">
+         <a class="link" href="{{ url_for('register') }}">Sign Up </a>
+         <a class="link1" href="{{ url_for('login') }}">Sign In</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <h1 class="web-name">SecureSign</h1>
+        </div>
+    </nav>
+    <div class="dashboard">
+    <h2>Welcome to the SecureSign</h2>
+    <p>You are successfully logged in</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
